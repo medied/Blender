@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"medied"
+		]
+	},
+  "extensionname-blender": "The extension name",
+  "blender-description": "The description of the Blender description"
+}
