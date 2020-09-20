@@ -4,15 +4,18 @@
   "descriptionmsg": "blender-description",
   "namemsg": "extensionname-blender",
   "author": "medied",
-  "AutoloadNamespaces": {
-		"MediaWiki\\Extension\\Blender\\": "includes/"
-	},
-	"SpecialPages": {
-		"Blender": "MediaWiki\\Extension\\Blender\\SpecialBlender"
-	},
+  "AutoloadClasses": {
+    "SpecialBlender": "src/Special.php"
+  },
+  "SpecialPages": {
+    "Blender": "SpecialBlender"
+  },
   "MessagesDirs": {
 		"Blender": [
 			"i18n"
 		]
-  }
+  },
+  "ExtensionMessagesFiles": {
+		"BlenderAlias": "./Blender.i18n.alias.php"
+	}
 }
