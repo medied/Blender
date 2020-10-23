@@ -9,12 +9,12 @@ class SpecialBlender extends SpecialPage {
 		$output = $this->getOutput();
 		$this->setHeaders();
 
+		global $wgUser;
+
 		# Get request data from, e.g.
 		# $param = $request->getText( 'param' );
 
-		# Do stuff
-		# ...
-		$wikitext = 'Hello world!';
+		$wikitext = "Hello $wgUser!";
 		$output->addWikiTextAsInterface( $wikitext );
 	}
 }
